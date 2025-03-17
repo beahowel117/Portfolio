@@ -1,0 +1,54 @@
+.viewButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid; /* Solid border to apply gradient */
+    border-image-source: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1); /* Border gradient */
+    border-image-slice: 1; /* Ensures the gradient is fully applied */
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    color: transparent; /* Text will display gradient */
+    background-clip: text; /* Applies gradient to text */
+    -webkit-background-clip: text; /* For Safari compatibility */
+    -webkit-text-fill-color: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1); /* Safari-specific for text gradient */
+    position: relative;
+    overflow: hidden; /* Prevents animation overflow */
+    cursor: pointer;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Large size for smooth animation */
+    height: 200%;
+    color: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    /* background-size: 200%; */
+    animation: gradient-animation 3s linear infinite; /* Animates gradient movement */
+    z-index: -1; /* Keeps it behind text and border */
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .button:hover {
+    filter: brightness(1.2); /* Brightens effect on hover */
+  }
+  

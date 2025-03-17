@@ -1,0 +1,16 @@
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+  }
+  
+  .line {
+    width: 2px;
+    height: 100px;
+    background-color: white;
+    transform-origin: center center;
+  }

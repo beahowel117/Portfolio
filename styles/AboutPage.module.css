@@ -1,0 +1,186 @@
+.about {
+    margin: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    margin-bottom: 50px;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500px;
+    transition: all 1.1s;
+}
+
+.profile_fade-in {
+    opacity: 1;
+    transform: translateX(300px);
+}
+
+.profilePicture {
+    height: 24rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-text {
+    font-size: 18px;
+    width: 500px;
+    line-height: 1.8;
+}
+
+
+.skills-row {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* display: grid; */
+ /*grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  Adjust size as needed */
+  /* justify-content: center; */
+  /*gap: 20px; Space between items */
+  /* width: 100%; */
+  /*max-width: 400px;  Adjust the circle's size */
+  /* margin: 0 auto;
+  position: relative; */
+ /* aspect-ratio: 1; Makes the container circular */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    gap: 40px; /* Adjust spacing as needed */
+    max-width: 600px;
+    margin: 80px auto 0px;
+
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a; /* Background color of the card */
+    border-radius: 20px;
+    border: 3px solid;
+    border-image-source: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    border-image-slice: 1;
+    padding: 15px;
+    width: 120px;
+    height: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    height: 120px;
+    width: 145px; 
+}
+
+.skills-item-name {
+    font-size: 1.2rem;
+    font-weight: 600px;
+    line-height: 1;
+    transition: all .2s;
+    letter-spacing: 1px;
+}
+.skills {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .skillsHeading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .skillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skillCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skillImage {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .skillName {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skill-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px); /* Start slightly to the left */
+    animation: fadeInLeft 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* End in the original position */
+    }
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(20px); /* Start slightly to the right */
+    animation: fadeInRight 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* End in the original position */
+    }
+  }
+  
+  
+  
