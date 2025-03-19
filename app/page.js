@@ -8,7 +8,6 @@ export default function Home() {
    <>
     {/* <Background/> */}
     <Intro />
-    <CardGrid />
    </>
   );
 }

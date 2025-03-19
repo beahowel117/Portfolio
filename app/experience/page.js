@@ -3,25 +3,10 @@
 import Image from "next/image";
 import styles from "@/styles/Experience.module.css";
 import resume from "../../public/Images/resume.png";
-import Card from "../../components/Card";
 import CardGrid from "@/components/CardGrid";
 
 export default function Experience() {
 
-  const projects = [
-    {
-        // image: "/images/project1.jpg",
-        description: "This is the description for Project 1.",
-    },
-    {
-        // image: "/images/project2.jpg",
-        description: "This is the description for Project 2.",
-    },
-    {
-        // image: "/images/project3.jpg",
-        description: "This is the description for Project 3.",
-    },
-];
   return (
     <div className={styles.resumePage}>
       <h3 className= "header mb-6 text-center">Experience</h3>
@@ -43,16 +28,7 @@ export default function Experience() {
         </a>
       </div>
       <h3 className= "header mb-6 text-center">Projects</h3>
-      {/* <div className="flex">
-      
-      <Card />
-      <Card />
-      <Card />
-      </div> */}
          <div className="flex flex-wrap justify-center">
-            {/* {projects.map((project, index) => (
-                <Card key={index} description={project.description} />
-            ))} */}
             <CardGrid />        
          </div>
     </div>
