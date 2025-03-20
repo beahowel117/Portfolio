@@ -41,21 +41,7 @@
     line-height: 1.8;
 }
 
-
 .skills-row {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* display: grid; */
- /*grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  Adjust size as needed */
-  /* justify-content: center; */
-  /*gap: 20px; Space between items */
-  /* width: 100%; */
-  /*max-width: 400px;  Adjust the circle's size */
-  /* margin: 0 auto;
-  position: relative; */
- /* aspect-ratio: 1; Makes the container circular */
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,8 +51,15 @@
     margin: 80px auto 0px;
 
 }
+.skills-container {
+  position: relative;
+  width: 500px; /* Adjust size */
+  height: 400px;
+  margin: auto;
+  margin-bottom: 50px;
+}
 
-.skills-item {
+.skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +76,24 @@
     transition: transform 0.3s ease;
     height: 120px;
     width: 145px; 
+}
+
+.skills-item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a; /* Background color */
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  border-image-slice: 1;
+  padding: 10px;
+  width: 145px;
+  height: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .skills-item-name {
@@ -137,11 +148,6 @@
     color: #ffffff;
   }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-  }
   
   .skill-card {
     display: flex;
@@ -182,5 +188,11 @@
     }
   }
   
+/* ⭐ 5-Point Star Positioning */
+.skills-item:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); } /* Top */
+.skills-item:nth-child(2) { top: 48%; left: 85%; transform: translate(-50%, -50%); } /* Upper-right */
+.skills-item:nth-child(3) { top: 85%; left: 68%; transform: translate(-50%, -50%); } /* Lower-right */
+.skills-item:nth-child(4) { top: 85%; left: 32%; transform: translate(-50%, -50%); } /* Lower-left */
+.skills-item:nth-child(5) { top: 48%; left: 15%; transform: translate(-50%, -50%); } /* Upper-left */
   
   

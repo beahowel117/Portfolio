@@ -19,12 +19,12 @@ function AboutPage() {
     { name: 'React', image: '/images/react.svg'},
     { name: 'Redux', image: '/images/redux.svg'},
     { name: 'NextJS', image: '/images/next.svg'},
-    { name: 'Node', image:'/images/node.svg'},
+    { name: 'React Native', image: '/images/react.svg'},
     { name: 'AWS', image: '/images/aws.svg'},
     { name: 'Python', image: '/images/python.svg'},
     { name: 'MongoDB', image: '/images/mongodb.svg'},
-    { name: 'React Native', image: '/images/react.svg'},
-    { name: 'Microsoft Copilot', image: '/images/copilot.svg'}
+    { name: 'Microsoft Copilot', image: '/images/copilot.svg'},
+    { name: 'Node', image:'/images/node.svg'},
   ]
   
   return (
@@ -40,15 +40,25 @@ function AboutPage() {
           </p>
         </div>
         <div className={`${styles.skills} ${styles['fade-in-right']}`}>
-          <div className={styles['skills-row']}>
-            {skills.map((skill, index) => (
+          <div className={styles['skills-container']}>
+            {skills.slice(0,5).map((skill, index) => (
               //  <SkillCard key={index} name={skill.name} src={skill.src}/>
               <div key={index} className={styles['skills-item']}>
                 <img src={skill.image} alt={skill.name} className={styles.skillImage} />
                 <p className={styles['skills-item-name']}>{skill.name}</p>
               </div>
             ))}
+            
 
+          </div>
+          <div className={styles['skills-container']}>
+            {skills.slice(5).map((skill, index) => (
+              //  <SkillCard key={index} name={skill.name} src={skill.src}/>
+              <div key={index} className={styles['skills-item']}>
+                <img src={skill.image} alt={skill.name} className={styles.skillImage} />
+                <p className={styles['skills-item-name']}>{skill.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

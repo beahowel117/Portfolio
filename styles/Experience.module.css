@@ -131,4 +131,14 @@
     background: #ff69b4;
     opacity: 0.1;
   }
+
+  .experienceItem {
+    padding: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.kaushan-text {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2rem;
+}
   
