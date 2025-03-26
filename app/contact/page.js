@@ -47,7 +47,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Name"
-              className="border border-gray-600 bg-[#282828] text-white placeholder-gray-400 rounded-lg p-4 w-[500px] focus:outline-none focus:ring-2 focus:ring-gray-500 form"
+              className="border border-gray-600 bg-[#282828] text-white placeholder-gray-400 rounded-lg p-4 w-full sm:w-[500px] focus:outline-none focus:ring-2 focus:ring-gray-500 form"
               id="name"
             />
             <input
@@ -56,7 +56,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="border border-gray-600 bg-[#282828] text-white placeholder-gray-400 rounded-lg p-4 w-[500px] focus:outline-none focus:ring-2 focus:ring-gray-500"
+              className="border border-gray-600 bg-[#282828] text-white placeholder-gray-400 rounded-lg p-4 w-full sm:w-[500px] focus:outline-none focus:ring-2 focus:ring-gray-500"
               id="email"
             />
             <textarea
@@ -64,7 +64,7 @@ function Contact() {
               value={formData.message}
               onChange={handleChange}
               placeholder="Message"
-              className="border border-gray-600 bg-[#282828] text-white placeholder-gray-400 rounded-lg p-4 w-[500px] h-40 resize-none focus:outline-none focus:ring-2 focus:ring-gray-500"
+              className="border border-gray-600 bg-[#282828] text-white placeholder-gray-400 rounded-lg p-4 w-full sm:w-[500px] h-40 resize-none focus:outline-none focus:ring-2 focus:ring-gray-500"
               id="message"
             />
             <button
