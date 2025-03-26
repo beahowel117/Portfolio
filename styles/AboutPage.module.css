@@ -196,3 +196,70 @@
 .skills-item:nth-child(5) { top: 48%; left: 15%; transform: translate(-50%, -50%); } /* Upper-left */
   
   
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    margin-bottom: 20px;
+  }
+
+  .profilePicture {
+    height: 15rem; /* Smaller profile picture */
+  }
+
+  .profile-text {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .skills-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 10px auto; /* Stack in a column */
+  }
+
+  /* Remove absolute positioning for mobile */
+  .skills-item:nth-child(1), .skills-item:nth-child(2), .skills-item:nth-child(3), .skills-item:nth-child(4), .skills-item:nth-child(5) {
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-item {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-text {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}

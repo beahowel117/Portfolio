@@ -37,7 +37,7 @@ function Contact() {
   return (
     <>
       <InteractiveBackground />
-      <div className="flex flex-col justify-center min-h-screen p-6 w-full z-9999">
+      <div className="flex flex-col justify-center min-h-screen p-6 w-full z-9999 form-container">
         <form className={`w-full max-w-lg p-6 ${styles.form}`}>
           <h3 className= "header mb-6 text-center">Contact Me</h3>
           <div className="flex flex-col gap-4 items-end form">

@@ -11,14 +11,17 @@ export default function Experience() {
   return (
     <div className={styles.resumePage}>
       <h3 className= "header mb-6 text-center">Experience</h3>
+      <div>
+        <a
+            href="/resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles['resume-button']}
+          >
+            Download Resume
+          </a>
+      </div>
       <div className={styles.resumeCard}>
-        {/* <Image
-          src={resume}// Replace with the path to your resume image
-          alt="Resume Preview"
-          width={800} // Adjust to match your image size
-          height={1000} // Adjust to match your image size
-          className={styles.resumeImage}
-        /> */}
          <div className={styles.experienceContainer}>
           <ExperienceItem 
             title="Backend Engineer - Contributor"
@@ -42,14 +45,14 @@ export default function Experience() {
           />
         </div>
 
-        <a
+        {/* <a
           href="/resume.pdf" 
           target="_blank"
           rel="noopener noreferrer"
           className={styles['resume-button']}
         >
           Download Resume
-        </a>
+        </a> */}
       </div>
       <h3 className= "header mb-6 text-center">Projects</h3>
          <div className="flex flex-wrap justify-center">

@@ -15,6 +15,19 @@
   }
 }
 
+@media (max-width: 768px) {
+  :root {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
