@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -7,6 +7,7 @@ function NavBar() {
   // const router = useRouter();
   // const currentPath = router.pathname;
   const currentPath = usePathname();
+  const [isMobile, setIsMobile] = useState(false);
 
   const links = [
     { href: "/", label: "Home" },
@@ -14,13 +15,21 @@ function NavBar() {
     { href: "/experience", label: "Experience" },
     { href: "/contact", label: "Contact" },
   ];
+ useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+  handleResize();
+  window.addEventListener('resize', handleResize);
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+ }, []);
 
-  const filteredLinks = links.filter(link => {
-    if (window.innerWidth <= 768) {
-       return link.href !== currentPath;
-    }
-    return true;
- });
+
+  const filteredLinks = isMobile ? links.filter(link => link.href !== currentPath) : links;
+    
+
 
   return (
     <div className="w-full absolute text-white z-10">

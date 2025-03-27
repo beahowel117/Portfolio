@@ -17,14 +17,14 @@ function Contact() {
     setStatus('Sending...');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
+      const data = await response.json();
       if (response.ok) {
-        setStatus('Message sent successfully!');
+        setStatus(data.message || 'Message sent successfully');
         setFormData({ name: '', email: '', message: '' });
       } else {
         setStatus('Failed to send message. Please try again.');
@@ -38,7 +38,7 @@ function Contact() {
     <>
       <InteractiveBackground />
       <div className="flex flex-col justify-center min-h-screen p-6 w-full z-9999 form-container">
-        <form className={`w-full max-w-lg p-6 ${styles.form}`}>
+        <form className={`w-full max-w-lg p-6 ${styles.form}`} onSubmit={handleSubmit}>
           <h3 className= "header mb-6 text-center">Contact Me</h3>
           <div className="flex flex-col gap-4 items-end form">
             <input
