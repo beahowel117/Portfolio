@@ -43,8 +43,8 @@ function Intro() {
             alignItems: "center"
           }}
         >
-          <h1 ref={h1Ref}>Hello, I'm <span className="sparkly-text">Beth</span></h1>
-          <h2 ref={h2Ref}>I'm a Software Engineer.</h2>
+          <h1 ref={h1Ref}>Hello, I&apos;m <span className="sparkly-text">Beth</span></h1>
+          <h2 ref={h2Ref}>I&apos;m a Software Engineer.</h2>
           <ViewWorkButton />
         </main>
       </section >
