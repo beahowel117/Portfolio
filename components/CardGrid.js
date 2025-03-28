@@ -1,5 +1,4 @@
 'use client';
-import styles from '../styles/Card.module.css';
 import Card from './Card';
 import farmersMarket from '../public/images/farmersMarket.png'; 
 import frog from '../public/images/frog.png'; 
