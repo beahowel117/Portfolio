@@ -15,16 +15,16 @@ function SkillCard({name, src}){
 
 function AboutPage() {
   const skills = [
-    { name: 'JavaScript', image: '/images/javascript.svg'},
-    { name: 'React', image: '/images/react.svg'},
-    { name: 'Redux', image: '/images/redux.svg'},
-    { name: 'NextJS', image: '/images/next.svg'},
-    { name: 'React Native', image: '/images/react.svg'},
-    { name: 'AWS', image: '/images/aws.svg'},
-    { name: 'Python', image: '/images/python.svg'},
-    { name: 'MongoDB', image: '/images/mongodb.svg'},
-    { name: 'Microsoft Copilot', image: '/images/copilot.svg'},
-    { name: 'Node', image:'/images/node.svg'},
+    { name: 'JavaScript', image: '/javascript.svg'},
+    { name: 'React', image: '/react.svg'},
+    { name: 'Redux', image: '/redux.svg'},
+    { name: 'NextJS', image: '/next.svg'},
+    { name: 'React Native', image: '/react.svg'},
+    { name: 'AWS', image: '/aws.svg'},
+    { name: 'Python', image: '/python.svg'},
+    { name: 'MongoDB', image: '/mongodb.svg'},
+    { name: 'Microsoft Copilot', image: '/copilot.svg'},
+    { name: 'Node', image:'/node.svg'},
   ]
   
   return (
