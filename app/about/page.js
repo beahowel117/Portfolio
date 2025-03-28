@@ -44,7 +44,7 @@ function AboutPage() {
             {skills.slice(0,5).map((skill, index) => (
               //  <SkillCard key={index} name={skill.name} src={skill.src}/>
               <div key={index} className={styles['skills-item']}>
-                <img src={skill.image} alt={skill.name} className={styles.skillImage} />
+                <img src={skill.image} alt={skill.name} className={styles.skillImage} width="500" height="300"/>
                 <p className={styles['skills-item-name']}>{skill.name}</p>
               </div>
             ))}
