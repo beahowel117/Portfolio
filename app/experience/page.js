@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import styles from "@/styles/Experience.module.css";
-import resume from "../../public/Images/resume.png";
 import CardGrid from "@/components/CardGrid";
 import ExperienceItem from "@/components/ExperienceItem";
 

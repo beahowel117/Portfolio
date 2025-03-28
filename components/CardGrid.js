@@ -1,6 +1,6 @@
 'use client';
 import Card from './Card';
-import farmersMarket from '../public/images/farmersMarket.png'; 
+import farmersMarket from '../public/images/farmersMarket.png'; // Ensure the path is correct for your project structure 
 import frog from '../public/images/frog.png'; 
 import storyGenius from '../public/images/storyGenius.png'; 
 
