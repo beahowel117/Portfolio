@@ -1,9 +1,9 @@
 'use client';
 import styles from '../styles/Card.module.css';
 import Card from './Card';
-import farmersMarket from '../public/Images/farmersMarket.jpeg';
-import frog from '../public/Images/frog.png';
-import storyGenius from '../public/Images/storyGenius.png';
+import farmersMarket from '../public/images/farmersMarket.png'; 
+import frog from '../public/images/frog.png'; 
+import storyGenius from '../public/images/storyGenius.png'; 
 
 const projects = [
     { id: 1, image: farmersMarket, title: "Farmers Market App", description:"A React Native app built with TypeScript that helps users discover nearby farmers markets using location-based data. It features an AI-powered chatbot that generates personalized recipes and shopping lists based on market finds."},
